@@ -68,3 +68,13 @@
 - retrieval tool
     - webserver which exposes the info e.g. http://docs.greenitglobe.com/wa63r.jpg
   
+  
+  ## generic flow for uploading info
+  
+  - command
+  - subcommand
+  - send 1 or more files/scans/locations/pictures/...
+  - send 'OK' or 'K'
+  - then other questions are asked for
+  
+  
