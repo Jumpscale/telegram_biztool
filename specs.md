@@ -1,10 +1,9 @@
 
-- telegram robot
-
 ## expense management
 
+- telegram robot per company
 - cmd 'expense'
-- robot asks: new, list, delete, edit, ... (the sub commands)
+    - robot asks: new, list, delete, edit, ... (the sub commands)
 - new:
     - args:
         - see below under workflow mgmt (robot asks this info in userfriendly way)
@@ -20,7 +19,7 @@
 - each entry in redis for expense has following info
   - key (4 easly digits/letters)
   - foto/file of expense (link to ipfs)
-  - company: predefined list of companies (config of robot)
+  - company: is the name of the robot
   - tags: tags/labels like used in python jumpscale
   - project: free text      
   - owner (user name from telegram)
@@ -37,7 +36,9 @@
 
 ## archival tool
 
+- telegram robot per company (is always for new info)
 - robot
+    - cmd: archive
     - args:
         - see below (robot asks this info in userfriendly way)
         - is foto or uploaded file (if already scanned before)
@@ -53,7 +54,7 @@
 - each entry in redis for archival has following info
   - key (5 easly digits/letters)
   - foto/file of doc (link to ipfs)
-  - company: predefined list of companies (config of robot)
+  - company: is the name of the robot
   - category: predefined list of categories
   - tags: tags/labels like used in python jumpscale
   - owner (user name from telegram)
