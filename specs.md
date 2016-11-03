@@ -18,7 +18,7 @@
 
 - each entry in redis for expense has following info
   - key (4 easly digits/letters)
-  - foto/file of expense (link to ipfs)
+  - foto/file(s) of expense (link to ipfs), can be more than 1 !!!
   - company: is the name of the robot
   - tags: tags/labels like used in python jumpscale
   - project: free text      
@@ -43,7 +43,7 @@
         - see below (robot asks this info in userfriendly way)
         - is foto or uploaded file (if already scanned before)
     - info is stored in ipfs
-        - png or jpg or file
+        - png or jpg or files, can be more than 1 !!!
         - json message (which has link to png/jpg) for the structure info
     - hash of ipfs is stored in redis hset (of the json message)
     - returns: 
